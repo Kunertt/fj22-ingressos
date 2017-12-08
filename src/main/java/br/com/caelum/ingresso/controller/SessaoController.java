@@ -30,7 +30,7 @@ public class SessaoController {
 	private SessaoDao sessaoDao;
 
 	@GetMapping("admin/sessao")
-	public ModelAndView form(@RequestParam("salaID") Integer salaId, SessaoForm form) {
+	public ModelAndView form(@RequestParam("salaId") Integer salaId, SessaoForm form) {
 		form.setSalaId(salaId);
 
 		ModelAndView modelAndView = new ModelAndView("sessao/sessao");
